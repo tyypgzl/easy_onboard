@@ -11,7 +11,7 @@ class OnboardSkipButton extends StatelessWidget {
       onPressed: onPressed,
       child: Text(
         title,
-        style: Theme.of(context).textTheme.titleLarge!.copyWith(color: Colors.grey),
+        style: Theme.of(context).textTheme.headline5!.copyWith(color: Colors.grey, fontSize: 22),
       ),
     );
   }

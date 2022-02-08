@@ -37,9 +37,9 @@ class _MyHomePageState extends State<MyHomePage> {
         skipButtonPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => const SecondPage()));
         },
-        skipText: 'Atla',
-        nextText: 'İleri',
-        lastText: 'Bitir');
+        skipText: 'Skip',
+        nextText: 'Next',
+        lastText: 'Start');
   }
 
   List<OnboardModel> onboardPages = [

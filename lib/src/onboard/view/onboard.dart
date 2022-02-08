@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../utils/constants.dart';
+import '../../utils/extensions.dart';
 import '../../utils/paddings.dart';
 import '../model/onboard_model.dart';
 import '../widgets/back_button.dart';
@@ -8,7 +9,6 @@ import '../widgets/dots_selector.dart';
 import '../widgets/next_button.dart';
 import '../widgets/onboard_body.dart';
 import '../widgets/skip_button.dart';
-import '../../utils/extensions.dart';
 
 class Onboard extends StatefulWidget {
   /// This color is generally used in the project.
@@ -84,6 +84,8 @@ class _OnboardState extends State<Onboard> {
             int page = _currentIndex;
             if (page > 0) {
               page--;
+
+              
             }
             _pageController.animateToPage(page, duration: context.lowDuration, curve: Curves.easeOut);
           },

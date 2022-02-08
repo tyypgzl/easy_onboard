@@ -24,7 +24,7 @@ class OnboardBody extends StatelessWidget {
             flex: 5,
             child: Text(
               onboardModel.title,
-              style: Theme.of(context).textTheme.headlineMedium!.copyWith(color: primaryColor),
+              style: Theme.of(context).textTheme.headline5!.copyWith(color: primaryColor, fontSize: 28),
               textAlign: TextAlign.left,
             ),
           ),
